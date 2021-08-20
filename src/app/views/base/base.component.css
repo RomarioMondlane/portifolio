@@ -1,0 +1,14 @@
+
+
+img{
+    border-radius: 70%;
+}
+
+
+.mat-card-content{
+    display: flex;
+    
+}
+.sep{
+    margin-left: 200px;
+}
