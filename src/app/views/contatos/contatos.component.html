@@ -52,7 +52,7 @@
     
   <div *ngIf="!progress" >
     
-      <button  mat-raised-button (click)="envio()" [disabled]="msg==dados" >
+      <button  mat-raised-button (click)="envio()" matTooltip="pressione aqui para enviar porém a mensagem não deve ser vazia " >
         <i class="material-icons"> send
                    
         </i>Enviar</button>
@@ -64,7 +64,7 @@
   </div>
     <div class="dist">
       <h2>LinkedIn QRCODE</h2>
-     <a href="https://www.linkedin.com/in/rom%C3%A1rio-monjane-b5920915a"> <img src="assets/linked.jpg" alt="linkedin qrcode" width="250" height="200"></a>
+     <a href="https://www.linkedin.com/in/rom%C3%A1rio-monjane-b5920915a" matTooltip="Posicione sua camera nessa imagem até carregar a página do linkedIn ou pressione a imagem para tal "> <img src="assets/linked.jpg" alt="linkedin qrcode" width="250" height="200"></a>
     </div>
     
 </div>        
