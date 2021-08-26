@@ -17,6 +17,15 @@ import { MatSidenavModule} from'@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { FormacaoComponent } from './views/formacao/formacao.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDialogModule} from '@angular/material/dialog';
+import {HttpClientModule} from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatInputModule} from'@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatProgressBarModule}from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -38,7 +47,16 @@ import { FormacaoComponent } from './views/formacao/formacao.component';
     MatToolbarModule,
     MatCardModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    HttpClientModule,
+ FormsModule,MatInputModule,
+ MatSnackBarModule,
+ MatProgressBarModule
+ ,
+ MatDialogModule,
+ MatFormFieldModule
+,MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

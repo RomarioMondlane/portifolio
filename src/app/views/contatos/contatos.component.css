@@ -4,3 +4,36 @@
     flex-direction:column;
     
 }
+
+.sep{
+    margin-top: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.dist{
+    padding-top: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+span{
+    color: red;
+
+}
+img{
+    border:1px solid #ddd
+}
+
+
+img:hover {
+    box-shadow: 0 0 30px 1px rgba(0, 140, 186, 0.5);
+    width: 300px;
+    height: 250px;
+    visibility: visible;
+}
+

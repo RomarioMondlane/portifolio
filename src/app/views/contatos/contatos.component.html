@@ -1,4 +1,4 @@
-<mat-card >
+<mat-card routerLink="contatos" >
     
     <mat-card-content class="dis">
       <strong><i class="material-icons">phone
@@ -18,3 +18,59 @@
 
 
 </mat-card>
+
+<mat-card class="sep">
+  <mat-card-title>Contactar </mat-card-title>
+  <mat-card-content>
+    <div *ngIf="errar">
+      <span><i><strong>{{errar}}</strong></i></span>
+
+    </div>
+    <div class="content">
+      <div>
+      <form  > 
+        <mat-form-field>
+          
+          <mat-label>Enviar SMS</mat-label>
+            <textarea matInput placeholder="digite a mensagem" [(ngModel)]="msg"  name="msg" maxlength="200" >
+            </textarea>
+            
+
+        </mat-form-field>
+        
+    </form>
+    <div *ngIf="progress" >
+      <mat-progress-bar mode="buffer"  value="indeterminate" >
+       
+      </mat-progress-bar>
+      
+      <button  mat-raised-button  [disabled]="true" ><i class="material-icons"> send
+                   
+      </i>Enviar</button>
+  
+  </div> 
+    
+  <div *ngIf="!progress" >
+    
+      <button  mat-raised-button (click)="envio()" [disabled]="msg==dados" >
+        <i class="material-icons"> send
+                   
+        </i>Enviar</button>
+  
+    
+</div> 
+ 
+  
+  </div>
+    <div class="dist">
+      <h2>LinkedIn QRCODE</h2>
+     <a href="https://www.linkedin.com/in/rom%C3%A1rio-monjane-b5920915a"> <img src="assets/linked.jpg" alt="linkedin qrcode" width="250" height="200"></a>
+    </div>
+    
+</div>        
+      
+  </mat-card-content>
+
+
+</mat-card>
+

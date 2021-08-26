@@ -9,9 +9,12 @@ import {DatePipe} from "@angular/common";
 export class BaseComponent implements OnInit {
 
   mydate=Date.now();
+  msg:any;
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  envio():void{}
 
 }
